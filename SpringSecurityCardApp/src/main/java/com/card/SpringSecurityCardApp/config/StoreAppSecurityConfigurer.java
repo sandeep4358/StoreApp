@@ -1,15 +1,8 @@
 package com.card.SpringSecurityCardApp.config;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
-
-@EnableWebSecurity
+//@EnableWebSecurity
 @SuppressWarnings("deprecation")
-public class StoreAppSecurityConfigurer extends WebSecurityConfigurerAdapter {
+public class StoreAppSecurityConfigurer{ /*extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -19,7 +12,7 @@ public class StoreAppSecurityConfigurer extends WebSecurityConfigurerAdapter {
 		.withUser("card")
 		.password("card")
 		.roles("USER");
-		super.configure(auth);
+		//super.configure(auth);
 	}
 
 	
@@ -27,5 +20,5 @@ public class StoreAppSecurityConfigurer extends WebSecurityConfigurerAdapter {
 	@Bean
 	public PasswordEncoder getPasswordEncoder() {
 		return NoOpPasswordEncoder.getInstance();
-	}
+	}*/
 }
