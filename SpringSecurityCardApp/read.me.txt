@@ -1,0 +1,29 @@
+http://localhost:8082/v2/api-docs
+
+
+#below is the best blog to working with the swagger
+https://www.appsdeveloperblog.com/add-swagger-to-spring-boot-project/
+
+Swagger implementation issue was because of the servlet contextroot property was not supported by the spring fox 2.70 version
+so I changes the dependency with below, and the 
+
+	<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-core</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+this below start working.
+---------------------------------		
+		
+http://localhost:8082/card-app-ws/v2/api-docs
