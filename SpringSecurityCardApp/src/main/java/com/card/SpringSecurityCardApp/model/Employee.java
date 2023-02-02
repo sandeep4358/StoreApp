@@ -1,7 +1,5 @@
 package com.card.SpringSecurityCardApp.model;
 
-import java.security.Timestamp;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -35,10 +33,15 @@ public class Employee {
 	private String firstName;
 	@Column(name = "last_name")
 	private String lastname;
-
+	private String password;
 	private String email;
+	
 	@Column(unique=true)
 	private String phoneNumber;
 
 	private int age;
+	
+	private String roles;
+	private boolean active;
+	
 }
